@@ -1,0 +1,37 @@
+nav.navbar {
+    background-color:transparent;
+    padding-top: 30px;
+    border-style: hidden;
+  
+}
+nav.navbar.visibles{
+    background-color:cadetblue;
+}/*estilo para hacer transparente el nav*/
+
+a.navbar-brande{
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    line-height: 20px;
+    font-size: 300%;
+    font-family: 'Patrick Hand', cursive; 
+    color: #ffffff;
+}
+.navbar-brande:hover,
+.navbar-brande:focus {
+  text-decoration: none;
+  color:orangered;
+}
+/* efectos en navbar derecho*/
+div.navbar-collapse.collapse.navbar-right ul li a{
+     font-size: 150%;
+     font-family:'Patrick Hand', cursive;
+     color: white;
+     border: 2px solid darkorange;
+     border-radius: 12px;
+     padding: 10px 15px;
+ }
+
+div.navbar-collapse.collapse.navbar-right ul li a:hover{   
+     color: orangered;
+ }

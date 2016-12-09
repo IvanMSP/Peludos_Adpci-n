@@ -1,44 +1,72 @@
 {%extends 'base.html' %} 
 {%load static%}
+{%block head%}
+	
+{%endblock head%}
 {% block content%}
+	  <link href="{%static 'css/full-slider.css'%}" rel="stylesheet">
+	  <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill">
+                	<img class="fill img-responsive" src="http://www.solofondosdepantalla.net/fondos-de-pantalla/Perros/Fondo-de-pantalla-Perros-08.jpg">
+					<!--style="background-image:url('http://www.solofondosdepantalla.net/fondos-de-pantalla/Perros/Fondo-de-pantalla-Perros-08.jpg');-->
+
+                	<!--http://img0.es.gtsstatic.com/wallpapers/c9e5386e2acdcbcbbcad4ddc273e6e10_large.jpeg-->
+                	
+                </div>
+                <div class="carousel-caption">
+                    <h2 class="sletrero animatede zoomInUp">AYUDA A UN AMIGO A ENCONTRAR UN HOGAR</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill">
+                	<img class="img-responsive fill" src="http://elmundoaventuranimal.galeon.com/imagenes/labrador.jpg">
+					<!--style="background-image:url('http://elmundoaventuranimal.galeon.com/imagenes/labrador.jpg');"-->
+                </div>
+                <div class="carousel-caption">
+                    <h2 class="sletrero animatede zoomInDown">SÉ FELIZ CON UN COMPAÑERO</h2>
+                </div>
+            </div>
 
 
-
-		<div class="slider">
-						<ul class="slides">
-							<li>
-								 <img src="http://www.mundoperro.net/wp-content/uploads/Perro-Carlino-485x300.jpg"> <!-- random image -->
-								 <div class="caption left-align">
-								   <h2 class="white-text  "></h2>
-								   <h5 class="white-text  "></h5>
-								 </div>
-							 </li>
-							 <li>
-								 <img src="http://www.todoperros.com/wp-content/uploads/2016/08/perro-500x300.jpg"> <!-- random image -->
-								 <div class="caption center-align">
-								   <h2 class="white-text"></h2>
-								   <h5 class="white-text"></h5>
-							 </li>
-							 <li>
-								 <img src="https://www.petdarling.com/articulos/wp-content/uploads/2016/09/perros-razas.jpg"> <!-- random image -->
-								 <div class="caption right-align">
-								   <h2 class="white-text "></h2>
-								   <h5 class="white-text "></h5>
-								 </div>
-							 </li>
-	        			</ul>		
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill">
+                	<img class="img-responsive fill" src="http://img0.es.ndsstatic.com/wallpapers/036a1afe795500e417bdff95673982aa_large.jpeg">
+					<!--style="background-image:url('http://img0.es.ndsstatic.com/wallpapers/036a1afe795500e417bdff95673982aa_large.jpeg');"-->
+			    </div>
+                <div class="carousel-caption">
+                    <h2 class="sletrero animatede zoomIn">HAZ CRECER A TU FAMILIA</h2>
+                </div>
+            </div>
         </div>
 
-   
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
 
-
-       
+    </header>
 {%endblock content%}
 
 {%block scripts%}
 <script>
-		$(document).ready(function(){
-    		$('.slider').slider({full_width: true,indicators:true});
-		});
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
 </script>
 {%endblock scripts%} 
