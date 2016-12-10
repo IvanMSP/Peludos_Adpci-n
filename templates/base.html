@@ -10,37 +10,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--Import Google Icon Font-->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="{%static 'css/main.css'%}">
-
-	<!--Let browser know website is optimized for mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-	
+	<link rel="stylesheet" type="text/css" href="{%static 'css/chucho.css'%}">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/animate.css'%}">
+	<link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
 	{%block head%} {%endblock head%}
 </head>
 
 <body>	
-	<nav class="N/A transparent  navbar-fixed">
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo blue-text text-darken-2">Peludos en Adopción</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down blue-text text-darken-2">
-					<li><a href="#" class="blue-text text-darken-2">Inicio</a></li>
-					<li><a href="#" class="blue-text text-darken-2">¿Que hacemos?</a></li>
-					<li><a href="#" class="blue-text text-darken-2">Ubicación</a></li>
-					<li><a href="#" class="blue-text text-darken-2">Eventos</a></li>
-					<li><a href="#contact" class="blue-text text-darken-2">Contácto</a></li>		
-			</ul>
-		</div>
-	</nav>	
-
 	{%block content%}
-	
-	
 
 	{%endblock content%}
      <!--Import jQuery before materialize.js-->
-	 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	
 	 {%block scripts%}
 	 {%endblock scripts%}
 </body>

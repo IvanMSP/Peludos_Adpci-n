@@ -1,0 +1,35 @@
+{% load static %}
+{% block content %}
+<div id="Perritos" class="divsPerros">
+    <center><img class="img-responsive" src="{%static 'img/huella.png' %}" width="" height=""></center>
+    <center><h1>¡AYUDA A LOS QUE NO TIENEN VOZ!</h1></center>
+    <center><p>En peludos en adopción puedes ayudar a un perrito callejero a encontrar un hogar.</p></center>
+    <div class="row" style="padding:8px;">
+        <div class="col-sm-4 col-md-4">
+            <center><img class="img-responsive img-thumbnail redondo" src="{%static 'img/perro.png' %}" width="210px" height="210px"></center>
+             <h3 style="text-align:center;">Rescata a un perro.</h3>
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <center><img class="img-responsive img-thumbnail redondo" src="{%static 'img/casa.png' %}" width="210px" height="210px"></center>
+            <h3 style="text-align:center;">Llevalo a un refugio.</h3>
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <center><img class="img-responsive img-thumbnail redondo" src="{%static 'img/disfrutar.png' %}" width="250px" height="250px"></center>
+            <h3 style="text-align:center;">Disfruta ayudar.</h3>
+        </div>
+    </div>
+</div>
+<div id="video" class="divVideo">
+    <section>
+        <center><h1>¿Quieres saber como funciona peludos en adopción?</h1></center>
+        <br>
+        <center>
+<video width="400" controls>
+    <source src="mov_bbb.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+        </center>
+    </section>
+</div>
+{% endblock content %}
