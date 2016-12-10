@@ -22,6 +22,7 @@ a.navbar-brande{
   text-decoration: none;
   color:orangered;
 }
+
 /* efectos en navbar derecho*/
 div.navbar-collapse.collapse.navbar-right ul li a{
      font-size: 150%;
@@ -30,6 +31,7 @@ div.navbar-collapse.collapse.navbar-right ul li a{
      border: 2px solid darkorange;
      border-radius: 12px;
      padding: 10px 15px;
+     margin-left: 20px;
  }
 
 div.navbar-collapse.collapse.navbar-right ul li a:hover{   
