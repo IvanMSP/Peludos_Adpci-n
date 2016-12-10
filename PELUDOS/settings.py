@@ -25,7 +25,7 @@ SECRET_KEY = '0mi$q=*9_h5+9ieca@+7$1heh0mz0l&kc(p)5_9s3$$rn+x46c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [mighty-beach-19549.herokuapp.com]
 
 
 # Application definition
